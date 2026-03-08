@@ -1,0 +1,360 @@
+/* ===== Profile: 2-column layout ===== */
+
+.profile-header {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.profile-two-col {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+}
+
+.profile-col {
+  padding: 50px 50px;
+  min-height: 100%;
+}
+
+.profile-col-left {
+  border-right: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.profile-col-right {
+}
+
+/* ---- shared block spacing ---- */
+.profile-block {
+  margin-bottom: 48px;
+}
+.profile-block:last-child {
+  margin-bottom: 0;
+}
+
+/* ---- Introduction ---- */
+.profile-section-label {
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #aeb784;
+}
+
+.profile-tagline {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #111111;
+  margin-bottom: 20px;
+}
+
+.profile-desc {
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.9;
+}
+
+/* ---- Block title (Education, Study…) ---- */
+.profile-block-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #aeb784;
+  padding: 10px;
+  border-bottom: 1px solid rgba(174, 183, 132, 0.35);
+}
+
+/* ---- Education list ---- */
+.profile-edu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.profile-edu-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #333333;
+}
+.edu-year {
+  font-weight: 700;
+  color: #aeb784;
+  min-width: 36px;
+  font-size: 16px;
+}
+.edu-text {
+  line-height: 1.5;
+}
+
+/* ---- Study / GPA ---- */
+.gpa-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.gpa-img {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #e8e4d4;
+  margin-bottom: 14px;
+}
+.gpa-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.gpa-main {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111111;
+  margin: 0 0 4px;
+}
+.gpa-sub {
+  font-size: 16px;
+  color: #888888;
+  margin: 0;
+}
+
+/* ---- Work Experience ---- */
+.profile-exp-item {
+  padding-left: 14px;
+  border-left: 2px solid #aeb784;
+}
+.exp-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.exp-date {
+  font-size: 16px;
+  color: #aeb784;
+  font-weight: 600;
+}
+.exp-duration {
+  font-size: 14px;
+  color: #999999;
+  background: #f4f4f4;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+.exp-role {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111111;
+  margin: 0 0 4px;
+}
+.exp-company {
+  font-size: 17px;
+  color: #888888;
+  display: block;
+  margin-bottom: 10px;
+}
+.exp-desc {
+  font-size: 18px;
+  color: #555555;
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+.exp-stack {
+  font-size: 16px;
+  color: #777777;
+  line-height: 1.6;
+}
+.stack-label {
+  font-weight: 700;
+  color: #aeb784;
+  margin-right: 6px;
+}
+
+/* ---- Projects ---- */
+.profile-project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.profile-project-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.profile-project-item:last-child {
+  border-bottom: none;
+}
+.project-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  background-color: #e8e4d4;
+}
+.project-info h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111111;
+  margin: 0 0 6px;
+}
+.project-info h4 a {
+  color: #111111;
+}
+.project-info h4 a:hover {
+  color: #aeb784;
+}
+.project-info p {
+  font-size: 13px;
+  color: #777777;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* resume-wrap inside profile block — override _resume.css defaults */
+.profile-block .resume-wrap h2 { font-size: 20px; }
+.profile-block .resume-wrap .date { font-size: 16px; }
+.profile-block .resume-wrap .position { font-size: 17px; }
+.profile-block .resume-wrap .icon { display: none; }
+.profile-block .resume-wrap .text { width: 100%; }
+
+/* ---- Awards / Certification (shared record list) ---- */
+.profile-record-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.profile-record-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.profile-record-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.record-date {
+  font-size: 14px;
+  font-weight: 600;
+  color: #aeb784;
+  min-width: 52px;
+  padding-top: 2px;
+  letter-spacing: 0.04em;
+}
+.record-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.record-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222222;
+  line-height: 1.4;
+}
+.record-org {
+  font-size: 15px;
+  color: #999999;
+}
+
+/* ---- 기존 profile 관련 (sidebar, counter 등 하위 호환) ---- */
+.ftco-profile ul.profile-info {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.ftco-profile ul.profile-info li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.ftco-profile ul.profile-info li span {
+  width: calc(100% - 130px);
+}
+.ftco-profile ul.profile-info li span:first-child {
+  font-weight: 600;
+  color: #000000;
+  width: 130px;
+}
+
+.ftco-profile .counter-wrap .text p {
+  font-size: 20px;
+}
+.ftco-profile .counter-wrap .text p span {
+  font-weight: 400;
+  color: #000000;
+}
+.ftco-profile .counter-wrap .text p span.number {
+  font-weight: 600;
+  color: #aeb784;
+}
+
+#navi {
+  top: 180px;
+  position: -webkit-sticky;
+  position: sticky;
+  margin: 0;
+}
+#navi ul {
+  margin: 0;
+  padding: 0;
+}
+#navi li {
+  font-weight: 700;
+  list-style: none;
+  margin-bottom: 10px;
+}
+#navi li a {
+  color: #000000;
+}
+#navi li a.current {
+  color: #aeb784;
+  margin-left: 20px;
+  position: relative;
+}
+#navi li a.current:after {
+  position: absolute;
+  top: 50%;
+  left: -24px;
+  width: 20px;
+  height: 2px;
+  content: "";
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #aeb784;
+}
+
+.page {
+  width: 100%;
+  margin-bottom: 7em;
+}
+.page.four {
+  margin-bottom: 0;
+}
+.page .heading {
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #aeb784;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 991.98px) {
+  .profile-col {
+    padding: 40px 24px;
+  }
+  .profile-col-left {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  }
+  .profile-tagline {
+    font-size: 24px;
+  }
+}
